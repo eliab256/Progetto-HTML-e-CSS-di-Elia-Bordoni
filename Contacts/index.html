@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US"> 
+    <head>
+        <meta charset='UTF-8'/>  
+        <title>Contacts</title> 
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> <!-- Image near the title -->
+        <link rel="stylesheet" href="../assets/css/styles.css"/> <!--stylesheet for header and footer-->
+        <link rel="stylesheet" href="../assets/css/contactsstyle.css"/> <!--stylesheet for main section-->
+    </head>
+
+
+    <body>
+        <header>
+            <div class='logo'>
+              <a href="index.html">
+                <img src='' alt="My Logo"> <!-- Insert here logo image -->
+             </a>
+           </div>
+           <div class="menu">
+                <a href="About_Me">About Me</a>
+                <a href="Portfolio">Portfolio</a>
+                <a href="Contacts">Contacts</a>
+            </div>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/elia-bordoni-a59946283/" target="_blank">
+                <img src="../assets/img/Linkedin Logos/LI-In-Bug tagliato.png" width="30">                                                                          
+              </a>
+              <a href="https://github.com/eliab256" target="_blank">
+                <img src="../assets/img/GitHub Logos/github-mark.png" width="30>">
+              </a>
+              <a href="https://talent.start2impact.it/profile/elia-bordoni-856a171d-db43-4743-a606-e3bb8d631f35" target="_blank">
+                <img src="../assets/img/S2I Logo.png"  width="30">                                    
+              </a>
+            </div>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <h1>Contacts</h1>
+                <p><em>Do you need help with your project?</em></p>
+                <p><em>Are you interested in starting a collaboration with me?</em></p>
+                <p>Fill out the form below</p>
+            </div>
+
+            <form action='' method='get' class='contact-form'>         <!--inserire dove mandare le richieste (action)-->
+                <div class="form-row">
+                    <label for='full-name'>Name</label>
+                    <input id='full-name' name='full-name' type='text'/>
+                </div>
+                <div class="form-row">
+                    <label for='company'>Company</label>
+                    <input id='company' name='company' type='text'/>
+                </div>
+                <div class='form-row'>
+                    <label for='email'>Email address</label>
+                    <input id='email'
+                           name='email'
+                           type='email'
+                           placeholder='joe@example.com'/>
+                  </div>
+                  <div class="form-row">
+                    <label for='message'>Message</label>
+                    <textarea id='message' name='message' type='text' placeholder="Write your message here"></textarea>
+
+                </div>
+                <div class='form-row'>
+                    <button>Submit</button>
+                  </div>
+            </form>
+        </main>
+
+        <footer>
+        <div class='footer-container'>
+          <div class='footer-item'>&copy 2024 Elia Bordoni</div>
+        </div>
+        </footer>
+    </body>
+</html>
