@@ -104,35 +104,27 @@ main{
     background-color: #407FC7;
   }
   
-  
 
   
-  @media only screen and (min-width: 700px) {
-    .form-container
-    .contact-form {
-      width: 600px;
+
+  /* Mobile Styles */
+  @media only screen and (max-width: 400px) {
+    body {
+    
     }
-    .form-row {
-      flex-direction: row;
-      align-items: flex-start; /* To avoid stretching */
-      margin-bottom: 20px;
-    }
-    .form-row input[type='text']
-    .form-row input[type='email']
-    .form-row select,               
-    .form-row textarea {
-      width: 250px;
-      height: initial;
-    }
-    .form-row label {
-      text-align: right;
-      width: 120px;
-      margin-top: 7px;
-      padding-right: 20px;
-    }
-    .form-row button {
-        margin-left: 120px;
-      }
-   
   }
   
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+    
+    }
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    .page {
+      width: 960px;
+      margin: 0 auto;
+    }
+  }

@@ -2,134 +2,159 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%;
+  }
+
+  .page{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
   }
 
 /*header start*/
-  header {
-    position: fixed;
-    top: 0;
-    background-color: #a1a1a1;
-    color: rgb(0, 0, 0);
-    padding: 20px 0;
+  header{
+    width: 100%;
+    height: 40px;
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
     align-items: center;
-    height: 80px;
-    width: 100%;
-}
+    background-color: silver;
 
-.logo{
-  border: 1px solid #fff;  
-  display: flex;
-  justify-content: center;
-  height: 40px;
-  width: auto;
-}
+  }
+  .header-items{
+    height: 25px;
+    justify-content: space-around;
+    border: white solid 1px;
+    align-items: center;
+    font-size: small;
 
-.menu{
-  border: 1px solid #fff;  
-  display: flex;
-  justify-content:space-around;
-  width: 300px;
-  height: auto;
-  margin-left: 200px;
-  margin-right: 200px;
-  font-size: 20px;
+  }
+  .logo{
+    align-items: center;
+  }
+  .logo img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .social-links{
+    align-items: center;
+  }
+  .social-links img{
+    width:33,3%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-}
+  .menu{
+    align-items: center;
+  }
 
-.social-links{
-  border: 1px solid #fff;  
-  display: flex;
-  justify-content:space-around;
-  height: auto;
-  width: 100px;
-}
-
+  
 /*header end*/
 
 
 /*main start*/
-main{
-  background-color: #ffffff;
-  height: 100vh;
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex:1;
+    background-color: rgb(222, 252, 161);
+    
+  }
+
+  .main-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: black solid 1px;
+    margin-top: 1%;
+    margin-bottom: 1%;  
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 90%; 
+  }
+
+  .main-items h1{
+    font-size: 20px;
+    text-align: center;
+    border: black solid 2px;
+    flex: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+  }
+
+
+
+    
+  .personal-picture {
+    height: 80%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.main-container{
-  height: 100vh;
-  background-color: hsl(39, 100%, 81%);
-  color: rgb(0, 0, 0);
-  padding: 10px 10px;
-  display: flex; 
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: space-between;
+.personal-picture img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover; 
+    border-radius: 40px;
 }
-
-.main-items{
-  border: 1px solid #000000;  
-  flex:1;
-  display: flex;
-  padding-left: 60px;
-  padding-right: 60px;
-  justify-content:center;
-  align-items: center;
-  flex-direction: column;
-  margin: 80px;
-  margin-top: 85px;
-  font-size: 20px;
- 
-}
-
-.personal-picture{
-  max-width: 80%;
-  max-height: 80%;
-  height: auto;
-  width: auto;
-  border-radius: 100px;
-
-}
-
-.my-description{
-  border: blue solid 2px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
   
-}
-
-.my-softskills{
-  border: white 2px solid;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  
-
-}
-
 
 /*main end*/
 
 /*footer start*/
-
 footer{
-    background-color: #a1a1a1;
-    color: #000000;
-    text-align: center;
-    font-size: 20px;
-}
-
-.footer-container{
+  width: 100%;
+  height: 40px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 60px;
+  background-color: silver;
+
+}
+.footer-items{
+  height: 25px;
+  justify-content: space-around;
+  border: white solid 1px;
+  align-items: center;
+  font-size: small;
+
+}
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+ 
+  
+  
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  
+  
+    
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .header{
+    height: 80px;
+  
+  }
+
+    
+  
 }
