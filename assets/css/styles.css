@@ -5,10 +5,15 @@
     height: 100%;
   }
 
+  html, body{
+    height: 100%;
+  }
+
   .page{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+   
     
   }
 
@@ -23,15 +28,17 @@
 
   }
   .header-items{
+    display: flex;
     height: 25px;
     justify-content: space-around;
     border: white solid 1px;
     align-items: center;
-    font-size: small;
+    font-size: 15px;
 
   }
   .logo{
     align-items: center;
+    justify-content: center;
   }
   .logo img{
     width:100%;
@@ -49,6 +56,8 @@
 
   .menu{
     align-items: center;
+    justify-content: center;
+    gap: 7px;
   }
 
   
@@ -64,13 +73,14 @@
     flex:1;
     background-color: rgb(222, 252, 161);
     
+    
   }
 
   .main-items{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: black solid 1px;
+    border: black solid 1px; 
     margin-top: 1%;
     margin-bottom: 1%;  
     margin-left: 2%;
@@ -79,17 +89,24 @@
   }
 
   .main-items h1{
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    border: black solid 2px;
+   /* border: black solid 2px; */
     flex: 1;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     
   }
 
+  .main-items p{
+    font-size: 12px;
+    text-align: justify;
+  }
 
-
+  .my-description{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
     
   .personal-picture {
     height: 80%; 
@@ -123,7 +140,7 @@ footer{
   justify-content: space-around;
   border: white solid 1px;
   align-items: center;
-  font-size: small;
+  font-size: 15px;
 
 }
 
@@ -138,7 +155,32 @@ footer{
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
+  header{
+    height: 60px;
   
+  }
+
+  footer{
+    height: 60px;
+  }
+
+
+  .header-items{
+    height: 35px;
+  }
+
+  .main-items h1{
+    font-size: 45px;
+    flex: 1;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    
+  }
+
+  .main-items p{
+    font-size: 20px;
+    
+  } 
   
     
 }
@@ -150,11 +192,18 @@ footer{
     margin: 0 auto;
   }
 
-  .header{
+  header{
     height: 80px;
   
   }
 
+  footer{
+    height: 80px;
+  }
+
+  .header-items{
+    height: 55px;
+  }
     
   
 }
