@@ -1,0 +1,108 @@
+header{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-bottom: black solid 4px;
+
+  }
+  .header-items{
+    display: flex;
+    height: 30px;
+    justify-content: space-around;
+    border: black solid 1px;
+    align-items: center;
+    font-size: 15px;
+
+  }
+  .logo{
+    align-items: center;
+    justify-content: center;
+  }
+  .logo img{
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+  }
+  .social-links{
+    align-items: center;
+    gap: 1%;
+  }
+  .social-links img{
+    width:33,3%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .menu{
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+  }
+
+  
+/*header end*/
+
+
+/*footer start*/
+footer{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-top: black solid 2px; /*mettere 4px su ipad e desktop*/
+  
+  }
+  .footer-items{
+    height: 20px;
+    /*border: black solid 1px; */
+    font-size: 15px;
+  }
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+ 
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  header{
+    height: 60px;
+  
+  }
+
+  footer{
+    height: 60px;
+    
+  }
+
+  .header-items{
+    height: 35px;
+  }
+
+    
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  header{
+    height: 80px;
+  
+  }
+
+  footer{
+    height: 80px;
+  }
+
+  .header-items{
+    height: 55px;
+  }
+
+ 
+    
+}
