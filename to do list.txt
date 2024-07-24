@@ -3,6 +3,7 @@ home:
 - cambiare l' immagine di sfondo
 - arrotondare e fare l' ombra alla foto
 - fare lo sfondo più scuro per il testo
-- check flexbox titolo
+- check altezza variabile flexbox titolo 
 - sistemare dimensioni font e padding margini per responsive design
-- centrare verticalmente il menù nell' header
+- centrare verticalmente il menù nell' header OK
+- non far sbordare il logo s2i nell' header
