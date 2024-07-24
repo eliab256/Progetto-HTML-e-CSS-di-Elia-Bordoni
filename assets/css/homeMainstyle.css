@@ -15,53 +15,9 @@
     min-height: 100vh;
   }
 
-/*header start*/
-  header{
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: white;
-    border-bottom: black solid 4px;
-
-  }
-  .header-items{
-    display: flex;
-    height: 30px;
-    justify-content: space-around;
-    border: black solid 1px;
-    align-items: center;
-    font-size: 15px;
-
-  }
-  .logo{
-    align-items: center;
-    justify-content: center;
-  }
-  .logo img{
-    width:100%;
-    height: 100%;
-    object-fit:cover;
-  }
-  .social-links{
-    align-items: center;
-    gap: 1%;
-  }
-  .social-links img{
-    width:33,3%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .menu{
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-  }
 
   
-/*header end*/
+
 
 
 /*main start*/
