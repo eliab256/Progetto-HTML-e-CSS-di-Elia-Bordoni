@@ -49,6 +49,7 @@
     padding-top: 10px;
     padding-bottom: 5px;
     align-content: center;
+    height: auto;
     /*risolvere problema titolo che prende troppo spazio in altezza su alcuni dispositivi*/
     
   }
