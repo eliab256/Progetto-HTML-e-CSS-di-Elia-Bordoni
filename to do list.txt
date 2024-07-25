@@ -6,4 +6,9 @@ home:
 - check altezza variabile flexbox titolo 
 - sistemare dimensioni font e padding margini per responsive design
 - centrare verticalmente il menù nell' header OK
-- non far sbordare il logo s2i nell' header
+- non far sbordare il logo s2i nell' header OK
+
+
+header e footer:
+- sistemare font
+- aggiungere effetto click 
