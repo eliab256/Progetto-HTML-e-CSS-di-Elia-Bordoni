@@ -11,4 +11,5 @@ home:
 
 header e footer:
 - sistemare font
-- aggiungere effetto click 
+- aggiungere effetto click
+-sistemare responsive font size su footer

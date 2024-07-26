@@ -4,11 +4,9 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:white;
+    background-color:rgb(222, 243, 146);
     border-bottom: black solid 2px;
     position: fixed;
-   
-
   }
   .header-items{
     display: flex;
@@ -16,7 +14,6 @@ header{
     align-items: center;
     font-size: 13px;
     max-width: 33,3%;
-    width:300px;
   }
 
   .logo{
@@ -40,6 +37,7 @@ header{
 
   .social-links{
     justify-content: center;
+    height: 20px;
     width: 33,3%;
     flex: 1;
     gap: 1%;
@@ -59,10 +57,9 @@ header{
   .menu{
     display: flex;
     justify-content: space-around;
-    gap: 5px; 
     flex: 2;
     margin: 5%;
-
+   
   }
 
   .menu a {
@@ -71,7 +68,6 @@ header{
   height: 100%; 
   text-decoration: none; 
   color: inherit;
- 
 }
 
 /*header end*/
@@ -101,22 +97,34 @@ footer{
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-  header{
-    height: 60px;
+header{
+    height: 50px;
     border-bottom: black solid 4px;
+    
   
   }
 
+  .header-items{
+    height: 35px;
+    font-size: 15px;
+  }
+  
+
+
+  .social-links{
+    height: 20px;
+  }
+
   footer{
-    height: 60px;
+    height: 50px;
     border-top: black solid 4px;
     
   }
 
-  .header-items{
-    height: 45px;
-    font-size: 20px;
+  .footer-items{
+    font-size: 15px ;
   }
+
 
     
 }
@@ -131,8 +139,13 @@ footer{
   }
 
   .header-items{
+    height: 55px;
     font-size: 25px;
 
+  }
+
+  .social-links{
+    height: 30px;
   }
 
   footer{
@@ -140,9 +153,7 @@ footer{
     border-top: black solid 4px;
   }
 
-  .header-items{
-    height: 55px;
-  }
+
 
  
     
