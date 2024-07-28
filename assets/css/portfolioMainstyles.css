@@ -15,13 +15,11 @@ html, body{
   min-height: 100vh;
 }
 
-
 main{
     display: flex;
     flex-direction: column;
     width: 100%;
     overflow: auto;
-    border: blue solid;
     margin-top: 40px;
     flex: 1;
 }
@@ -38,7 +36,7 @@ main{
 }
 
 .all-works {
-  border: rgb(255, 0, 0) 3px solid;
+  /*border: rgb(255, 0, 0) 3px solid;*/
   display: flex;
   flex-direction: column;
   flex:1;
@@ -50,7 +48,7 @@ main{
   flex-direction: column;
   align-items: stretch;
   width: 100%;
-  border: rgb(255, 251, 6) solid 2px;
+ /* border: rgb(137, 135, 9) solid 2px; */
   
 }
 
@@ -61,6 +59,7 @@ main{
   justify-content: center;
   padding-top: 5px;
   padding-bottom: 5px;
+
   height: auto;
   background-color: aquamarine;
   
@@ -74,6 +73,8 @@ main{
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: rgba(0, 0, 255, 0.192);
   
 
@@ -86,7 +87,7 @@ main{
  align-items: center;
  border: black 1px solid;
  width: 90%;
- height: 200px;
+ height: 300px;
  margin: 5px;
 
 }
@@ -100,6 +101,10 @@ main{
   /* Tablet Styles */
   @media only screen and (min-width: 401px) and (max-width: 960px) {
 
+    .works-grid-item{
+      width: 45%;
+    }
+
   }
   
   /* Desktop Styles */
@@ -107,6 +112,10 @@ main{
     .page {
       width: 960px;
       margin: 0 auto;
+    }
+
+    main{
+      margin-top: 80px;
     }
 
     .works-grid-item{
