@@ -22,6 +22,7 @@ main{
     width: 100%;
     overflow: auto;
     border: blue solid;
+    margin-top: 40px;
     flex: 1;
 }
 
