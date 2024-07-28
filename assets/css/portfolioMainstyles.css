@@ -74,22 +74,47 @@ main{
   justify-content: center;
   width: 100%;
   padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: rgba(0, 0, 255, 0.192);
-  
-
- 
+  padding-bottom: 5px; 
 }
 
 .works-grid-item{
  display: flex;
+ flex-direction:column;
  justify-content: center;
  align-items: center;
  border: black 1px solid;
- width: 90%;
- height: 300px;
+ width: 100%;
+ aspect-ratio: 1/1;
  margin: 5px;
+ 
 
+}
+
+.item-image-box{
+  display: flex;
+  align-items: center;
+  height: 70%;
+  width: 70%;
+
+  flex: 1;
+  padding: 5%;
+}
+
+.item-title-box{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.works-grid-item h3{
+ font-size: 25px;
+}
+
+.works-grid-item img{
+  max-width: 100%;
+  max-height: 100%;
 }
 
 
