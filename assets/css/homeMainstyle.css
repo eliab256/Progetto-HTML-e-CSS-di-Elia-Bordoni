@@ -29,7 +29,7 @@
     background-repeat: no-repeat;
     background-position:center;
     background-attachment: scroll;
-    margin-top: 40px;  /*cambiare nella media query a seconda del dispositivo di lettura*/
+    margin-top: 40px; 
     
   }
 
@@ -100,6 +100,10 @@
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 
+  main{
+    margin-top: 50px; 
+  }
+
   .main-items h1{
     font-size: 45px;
     padding-top: 22px;
@@ -119,6 +123,10 @@
   .page {
     width: 960px;
     margin: 0 auto;
+  }
+
+  main{
+    margin-top: 80px; 
   }
 
  /* .main-items{
