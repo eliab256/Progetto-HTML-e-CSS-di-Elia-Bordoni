@@ -1,10 +1,144 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.page{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+h1{
+  font-size: 30px;
+}
+
+h2{
+  font-size: 25px;
+}
+
+p{
+  font-size: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+
+
+}
+
+.main-container-text{
+  display: flex;
+  flex-direction: column;
+  border: rgb(255, 0, 0) 1px solid;
+  width: 100%;
+  
+}
+
+.main-items-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: auto; 
+}
+
+.title{
+  text-align: center;
+  align-content: center;
+  height: auto;
+  background-color: greenyellow;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.main-container-photo{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 90%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main-container-photo img{
+  max-width: 100%;
+  max-height: 100%;
+  
+  object-fit: cover; 
+}
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+ 
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+  main{
+    margin-top: 50px; 
   }
 
-  html, body{
-    height: 100%;
+/*.main-items h1{
+    font-size: 45px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    
   }
+
+  .main-items p{
+    font-size: 20px;
+    
+  }  */
+    
+} 
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  main{
+    margin-top: 80px; 
+  }
+
+ /* .main-items{
+    width: 50%; 
+
+  } */
+
+  .main-items h1{
+    font-size: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+  }
+
+  .main-items p{
+    font-size: 25px;
+    
+  } 
+}
