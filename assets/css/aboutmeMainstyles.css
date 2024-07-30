@@ -19,16 +19,23 @@ html, body{
 
 h1{
   font-size: 30px;
+  padding-top: 5px;    /* fare resp design*/
+  padding-bottom: 5px; /* fare resp design*/
 }
 
 h2{
   font-size: 25px;
+  padding-top: 5px;    /* fare resp design*/
+  padding-bottom: 5px; /* fare resp design*/
+
 }
 
 p{
   font-size: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   text-align: justify;
 }
 
@@ -38,19 +45,16 @@ main{
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 40px;
-
-
 }
 
-.main-container-text{
+.main-container-whoIam{
   display: flex;
   flex-direction: column;
-  border: rgb(255, 0, 0) 1px solid;
   width: 100%;
-  
+  margin-bottom: 30px; /* fare resp design*/
 }
 
-.main-items-text{
+.main-items-whoIam{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,32 +64,51 @@ main{
   height: auto; 
 }
 
+.my-photo{
+  width: 60%;
+  margin: 0 auto;
+  
+}
+
+.my-photo img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; 
+}
+
+.main-container-mySkills{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px; /* fare resp design*/
+  border: blue 2px solid;
+}
+
+.main-items-mySkills{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: auto; 
+}
+
+.skills-scheme{
+  border: violet 2px solid;
+  height: auto;
+  font-size: 60px;
+  width: 100%;
+}
+
 .title{
   text-align: center;
   align-content: center;
   height: auto;
   background-color: greenyellow;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
-
-.main-container-photo{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 90%;
-  height: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.main-container-photo img{
-  max-width: 100%;
-  max-height: 100%;
-  
-  object-fit: cover; 
-}
-
 
 
 /* Mobile Styles */
@@ -123,6 +146,14 @@ main{
 
   main{
     margin-top: 80px; 
+  }
+
+  .main-container-mySkills{
+    width: 50%;
+  }
+
+  .main-container-whoIam{
+    width: 50%;
   }
 
  /* .main-items{

@@ -19,3 +19,5 @@ portfolio:
 - sistemare font e size h1 e h2
 - sistemare lo scorrimento della pagina per far si che prenda tutta la largezza dello schermo su desktop
 - aggiungere foto e testi per ogni progetto
+
+about me
