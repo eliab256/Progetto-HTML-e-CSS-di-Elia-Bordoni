@@ -22,9 +22,9 @@ portfolio:
 
 about me:
 
-- creare lo stile degli elenchi puntati
+- creare lo stile degli elenchi puntati ok
 - completare la descrizione OK
-- compilare la sezione personal growth
+- compilare la sezione personal growth ok
 - aggiungere separatore verticale in destop layout OK
 - aggiungere font OK
 - sistemare lo scorrimento della pagina per far si che prenda tutta la largezza dello schermo su desktop
