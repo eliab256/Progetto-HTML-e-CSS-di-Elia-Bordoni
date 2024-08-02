@@ -108,10 +108,14 @@ main{
   align-items: center;
   height: 70%;
   width: 70%;
-
   flex: 1;
   padding: 5%;
 }
+
+.WIP::before{
+  content:url(../img/Work\ in\ progress.PNG.png);
+}
+
 
 .item-title-box{
   display: flex;
