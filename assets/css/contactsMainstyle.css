@@ -2,40 +2,58 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100%;
+
 }
 
 html, body{
   height: 100%;
+  width: 100%;
+  overflow: auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
+.page{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+
 main{
-    background-color: rgb(255, 255, 255);
     height: 100vh;  
-    font-size: 16px; 
+    font-size: 16px;  /*check quando c'è nuovo foglio css comune*/
     line-height: 1.3;
     display: flex;
     flex-direction: column;
     align-items: center;  
+    background: linear-gradient(to bottom,rgb(10, 10, 191),black);
+    color: white;
+    flex: 1;
+    margin-top: 40px;
 }
 
 .form-container{
-    margin-top: 80px;
     text-align: center;
-    width: 80%;
-    margin: 40px 0;
-    padding: 50px;
-   
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-top: 10px; /*cancellare quando c'è il foglio css comune */
+
 }
 
 .form-container h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 40px;    /*cancellare quando c'è il foglio css comune */
+    margin-bottom: 20px;  /*cancellare quando c'è il foglio css comune */
+    
+    height: auto;
+
 }
 
 .form-container p{
-    Font-size: 25px;    
-    margin-bottom: 5px;
+    Font-size: 25px;    /*cancellare quando c'è il foglio css comune */
+    margin-bottom: 5px; /*cancellare quando c'è il foglio css comune */
 }
 
 .contact-form {
@@ -43,21 +61,20 @@ main{
     justify-content:center; 
     align-items: center;
     flex-direction: column;
-    border-radius: 3px;
-    width: 80%;
-    padding: 10px;
-    margin: 0 0 40px 0;
-
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px; /*cancellare quando c'è il foglio css comune */
     
   }
 
   .form-row {
     font-family: Arial, Helvetica, sans-serif;     /* inserire il giusto font*/
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
+   
   }
   
   .form-row input[type='text']
@@ -71,7 +88,8 @@ main{
   }
   
   .form-row label {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin: 0 auto;
   }
   
   .form-row input[type='text']:invalid,
@@ -96,23 +114,26 @@ main{
   .form-row button {
     font-size: 16px;
     font-weight: bold;
-  
     color: #000000;
-    background-color: #5995DA;
-  
-    border: none;
-    border-radius: 3px;
-  
+    background-color: #ffffff;
+    border: solid black 2px;
+    border-radius: 5px;
     padding: 10px 40px;
     cursor: pointer;
   }
   
   .form-row button:hover {
-    background-color: #76AEED;
+    background-color:rgb(10, 10, 191);
+    border-color: white ;
+    color: white;
   }
   
   .form-row button:active {
     background-color: #407FC7;
+  }
+
+  .contact-form label {
+    margin-bottom: 5px;
   }
   
 
@@ -133,5 +154,9 @@ main{
     .page {
       width: 960px;
       margin: 0 auto;
+    }
+
+    main{
+      margin-top: 80px;
     }
   }
