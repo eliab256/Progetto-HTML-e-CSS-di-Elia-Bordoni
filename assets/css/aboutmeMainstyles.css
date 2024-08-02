@@ -77,6 +77,9 @@ main{
   margin-left: 7%;    
   margin-right: 7%;   
   flex: 1;
+  margin-bottom: 30px;
+  background: linear-gradient(to bottom,blue,black);
+  color: white;
 }
 
 .main-container-whoIam{
@@ -130,10 +133,12 @@ main{
 
 .main-items-mySkills{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
+  align-items: center;
   width: 100%;
-  height: auto; 
+  height: auto;
 }
 
 .skills-scheme{
@@ -143,76 +148,35 @@ main{
   align-content: center;
   font-size: 60px;
   width: 100%;
-  margin-bottom: 30px;  /* resp design*/
-}
-
-.experiences{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  width: 100%;
-  height: auto;
-  margin-bottom: 30px; 
-/*  border: red 2px solid; */
-}
-
-.main-items-school{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  height: auto; 
-}
-
-.school{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  width: 100%;
-  height: auto;
-  margin-bottom: 30px; 
-/*  border: rgb(242, 0, 255) 2px solid; */
-}
-
-.main-items-experinces{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  height: auto; 
-}
-
-.main-items-personal-growth{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  height: auto; 
-}
-
-.personal-growth{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  width: 100%;
-  height: auto;
-/*  border: rgb(242, 0, 255) 2px solid; */
 }
 
 .title{
   text-align: center;
   align-content: center;
   height: auto;
- /* background-color: rgb(153, 187, 254); */
   flex: 0;
   width: 80%;
-
-  border-bottom: dashed black 2px;    /* personalizzare lo stile del bordo */
+  border-bottom: dashed white 2px;    /* personalizzare lo stile del bordo */
 }
 
+.list{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.list ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list li{
+  margin-bottom: 25px;
+}
+
+.list li p {
+  text-align: center;
+  margin: 5px 0;
+}
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
@@ -273,7 +237,7 @@ main{
   }
 
   .main-container-whoIam{
-    border-right: 2px black dotted;
+    border-right: 2px white dotted;
    
     padding-right: 30px;
   }
