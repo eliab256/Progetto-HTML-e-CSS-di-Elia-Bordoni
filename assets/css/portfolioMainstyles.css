@@ -110,12 +110,8 @@ main{
   width: 70%;
   flex: 1;
   padding: 5%;
+  position: relative;
 }
-
-.WIP::before{
-  content:url(../img/Work\ in\ progress.PNG.png);
-}
-
 
 .item-title-box{
   display: flex;
@@ -123,12 +119,28 @@ main{
   text-align: center;
   width: 100%;
   margin-bottom: 5%;
+  z-index: 2;
 }
 
 .works-grid-item img{
   max-width: 100%;
   max-height: 100%;
 }
+
+.WIP::after{
+  content:"";
+  position: absolute;
+  top:0;
+  left: -11%;
+  width: 120%;
+  height: 110%;
+  z-index: 1;
+  background: url(../img/Work\ in\ progress.PNG.png) no-repeat center center;
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0.716);
+}
+
+
 
 
 /* Mobile Styles */
