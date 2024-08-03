@@ -157,15 +157,16 @@ main{
 }
 
 .title{
-
+  display: flex;
+  align-content: center; 
+  justify-content: center;
+  text-align: center;
   height: auto;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   flex: 0;
   width: 80%;
-  border-bottom: dashed white 2px;    
-  margin: 0 auto;
- 
+  border-bottom: dashed white 3px;   
 }
 
 

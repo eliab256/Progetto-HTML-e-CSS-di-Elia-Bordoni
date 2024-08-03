@@ -3,6 +3,7 @@ main{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .main-container-whoIam{
@@ -11,7 +12,6 @@ main{
   align-items: center;
   width: 100%;
   margin-bottom: 30px; 
-/*  border: yellowgreen 2px solid; */
 }
 
 .main-items-whoIam{
@@ -23,6 +23,7 @@ main{
   width: 100%;
   height: auto; 
   flex: 1;
+  margin-top: 10px;
 }
 
 .my-description{
@@ -50,7 +51,6 @@ main{
   width: 100%;
   height: auto;
   margin-bottom: 30px; 
- /* border: blue 2px solid; */
 }
 
 .main-items-mySkills{
@@ -76,16 +76,7 @@ main{
   color: inherit;
 }
 
-.title{
-  text-align: center;
-  align-content: center;
-  height: auto;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  flex: 0;
-  width: 80%;
-  border-bottom: dashed white 2px;    
-}
+
 
 .list{
   width: 100%;
@@ -118,11 +109,16 @@ main{
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  
+
+  main{
+    align-items: stretch;
+  }
+
   .main-container-mySkills, 
   .main-container-whoIam, 
   .main-container-experiences{
     width: 50%;
+ 
   }
 
   .main-container-mySkills{

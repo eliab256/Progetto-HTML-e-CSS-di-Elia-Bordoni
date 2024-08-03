@@ -1,17 +1,17 @@
 
 main{
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .all-works {
-  /*border: rgb(255, 0, 0) 3px solid;*/
   display: flex;
   flex-direction: column;
   flex:1;
-
+  margin-top: 20px;
 }
 
 .school-works{
@@ -23,18 +23,17 @@ main{
 }
 
 .name-school-works{
- /* border: black solid 1px; */
   display: flex;  
   align-items: center; 
   justify-content: center;
   padding-top: 5px;
   padding-bottom: 5px;
   height: auto;
-  background-color: aquamarine;
+  border-bottom: 2px white dashed;
 }
 
 .autodidatta{
-  border-top: 2px solid blue;
+  border-top: 2px solid white;
 }
 
 .works-grid{
@@ -110,21 +109,6 @@ main{
   
   /* Tablet Styles */
   @media only screen and (min-width: 401px) and (max-width: 960px) {
-    h1{
-      font-size: 30px;
-    }
-
-    h2{
-      font-size: 25px;
-    }
-    
-    h3{
-      font-size: 22px;
-    }
-
-    main{
-      margin-top: 50px;
-    }
 
     .works-grid-item{
       width: 42%;
@@ -134,24 +118,7 @@ main{
   
   /* Desktop Styles */
   @media only screen and (min-width: 961px) {
-    
-
-    h1{
-      font-size: 40px;
-    }
-
-    h2{
-      font-size: 30px;
-    }
-    
-    h3{
-      font-size: 25px;
-    }
-
-    main{
-      margin-top: 80px;
-    }
-
+  
     .works-grid-item{
       width: 30%;
     }
