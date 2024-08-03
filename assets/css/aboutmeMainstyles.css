@@ -1,85 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('Roboto-Light-webfont.woff') format('woff');
-  font-style: normal;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('Roboto-LightItalic-webfont.woff') format('woff');
-  font-style: italic;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('Roboto-Bold-webfont.woff') format('woff');
-  font-style: normal;
-  font-weight: 700;
-}
-
-html, body{
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
-.page{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  
-}
-
-h1{
-  font-size: 30px;
-  padding-top: 5px;   
-  padding-bottom: 5px; 
-  font-style: italic;
-}
-
-h2{
-  font-size: 25px;
-  padding-top: 5px;    
-  padding-bottom: 5px;
-  font-style: italic;
-}
-
-h3{
-  font-size: 20px;
-  padding-top: 5px;    
-  padding-bottom: 5px;
-  font-style: italic;
-}
-
-p{
-  font-size: 15px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  text-align: justify;
-}
-
 main{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 40px;
-  padding-left: 7%;    
-  padding-right: 7%;   
-  flex: 1;
-  padding-bottom: 30px;
-  background: linear-gradient(to bottom,rgb(10, 10, 191),black);
-  color: white;
 }
 
 .main-container-whoIam{
@@ -157,9 +80,11 @@ main{
   text-align: center;
   align-content: center;
   height: auto;
+  padding-top: 10px;
+  padding-bottom: 5px;
   flex: 0;
   width: 80%;
-  border-bottom: dashed white 2px;    /* personalizzare lo stile del bordo */
+  border-bottom: dashed white 2px;    
 }
 
 .list{
@@ -188,47 +113,12 @@ main{
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-
-  main{
-    margin-top: 50px;
-     
-  }
-
-  h1, h2{
-    font-size: 45px;
-    padding-top: 5px;    
-    padding-bottom: 5px; 
-  }
-
-  h3{
-    font-size: 30px;
-    padding-top: 5px;    
-    padding-bottom: 5px;
-  }
-  
-  p{
-    font-size: 20px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    text-align: justify;
-  }
     
 } 
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  .page {
-    width: 960px;
-    margin: 0 auto;
-  }
-
-  main{
-    margin-top: 80px; 
-    padding-left: 30px;    
-    padding-right: 30px;  
-  }
   
-
   .main-container-mySkills, 
   .main-container-whoIam, 
   .main-container-experiences{
@@ -244,23 +134,5 @@ main{
     padding-right: 30px;
   }
 
-  h1, h2{
-    font-size: 50px;
-    padding-top: 5px;    
-    padding-bottom: 5px; 
-  }
   
-  h3{
-    font-size: 35px;
-    padding-top: 5px;    
-    padding-bottom: 5px;
-  }
-  
-  
-  p{
-    font-size: 17px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    text-align: justify;
-  }
 }

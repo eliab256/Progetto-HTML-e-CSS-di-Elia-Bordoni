@@ -1,3 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Light-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-LightItalic-webfont.woff') format('woff');
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Bold-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+html, body{
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.page{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1{
+  font-size: 30px;
+  padding-top: 5px;   
+  padding-bottom: 5px; 
+  font-style: italic;
+}
+
+h2{
+  font-size: 25px;
+  padding-top: 5px;    
+  padding-bottom: 5px;
+  font-style: italic;
+}
+
+h3{
+  font-size: 20px;
+  padding-top: 5px;    
+  padding-bottom: 5px;
+  font-style: italic;
+}
+
+p{
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+
 header{
     width: 100%;
     height: 40px;
@@ -73,6 +144,32 @@ header{
 
 /*header end*/
 
+/*main start*/
+main{
+  margin-top: 40px;
+  width: 100%;
+  flex: 1; 
+  background: linear-gradient(to bottom,rgb(10, 10, 191),black);
+  color: white;
+  padding-left: 7%;    
+  padding-right: 7%;   
+  padding-bottom: 30px;
+}
+
+.title{
+
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  flex: 0;
+  width: 80%;
+  border-bottom: dashed white 2px;    
+  margin: 0 auto;
+ 
+}
+
+
+
 
 /*footer start*/
 footer{
@@ -99,7 +196,27 @@ footer{
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-header{
+
+  h1, h2{
+    font-size: 45px;
+    padding-top: 5px;    
+    padding-bottom: 5px; 
+  }
+
+  h3{
+    font-size: 30px;
+    padding-top: 5px;    
+    padding-bottom: 5px;
+  }
+  
+  p{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  header{
     height: 50px;
     border-bottom: black solid 4px;
   }
@@ -113,6 +230,10 @@ header{
     height: 20px;
   }
 
+  main{
+    margin-top: 50px;
+  }
+
   footer{
     height: 50px;
     border-top: black solid 4px;
@@ -123,13 +244,36 @@ header{
     height: 35px;
     font-size: 15px ;
   }
-
-
-    
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
+
+  h1, h2{
+    font-size: 50px;
+    padding-top: 5px;    
+    padding-bottom: 5px; 
+  }
+  
+  h3{
+    font-size: 35px;
+    padding-top: 5px;    
+    padding-bottom: 5px;
+  }
+  
+  
+  p{
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+
   header{
     height: 80px;
     width: 960px;   /*risolvere problema largezza header*/
@@ -147,6 +291,12 @@ header{
     height: 30px;
   }
 
+  main{
+    margin-top: 80px; 
+    padding-left: 30px;    
+    padding-right: 30px;  
+  }
+
   footer{
     height: 80px;
     border-top: black solid 4px;
@@ -157,9 +307,10 @@ header{
     font-size: 25px;
 
   }
-
-
-
  
     
 }
+
+
+
+

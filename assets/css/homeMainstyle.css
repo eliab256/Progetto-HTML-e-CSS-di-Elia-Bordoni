@@ -1,36 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 
-  html, body{
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-  }
-
-  .page{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    
-  }
-
-/*main start*/
   main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    flex:1;
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center;
-    background-attachment: scroll;
-    margin-top: 40px; 
-    
   }
 
   .main-items{
@@ -47,21 +19,15 @@
   }
 
   .title{
-    font-size: 18px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 5px;
     align-content: center;
-    height: auto;
-    /*risolvere problema titolo che prende troppo spazio in altezza su alcuni dispositivi*/
-    
+    height: auto; 
+    flex: 0;
   }
 
   .my-description{
-    font-size: 12px;
-    text-align: justify;
-    padding-left: 10%;
-    padding-right: 10%;
     padding-top: 10px;
     padding-bottom: 10px;
     
@@ -71,21 +37,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    border-radius: 40px; /*aggiornare i nuovi valori nelle media queri*/
-    width: 90%;
-    /*transform: rotate(-18deg);
-    transform-origin: center;*/
-    /* come fare a far venire l' immagine quadrata e quindi poi farla rotonda con il radius
-       creare la sfumatura al posto del nero così*/
-   
+    width: 100%;
 }
 
 .personal-picture img {
     width: 80%;
     height: 80%;
     object-fit: cover; 
-    border-radius: 40px; /*aggiornare i nuovi valori nelle media queri*/
+    border-radius: 250px;
+    border: black solid 5px;
 }
 
 /*main end*/
