@@ -69,6 +69,7 @@ p{
 }
 
 
+
 header{
     width: 100%;
     height: 40px;
@@ -216,6 +217,8 @@ footer{
     margin-bottom: 20px;
     text-align: justify;
   }
+
+
 
   header{
     height: 50px;
