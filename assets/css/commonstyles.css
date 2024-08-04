@@ -82,6 +82,7 @@ header{
     background-color: white;
     z-index: 100;
   }
+  
   .header-items{
     display: flex;
     height: 30px;
