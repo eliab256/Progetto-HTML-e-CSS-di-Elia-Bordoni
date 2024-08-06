@@ -152,7 +152,7 @@ main{
   margin-top: 40px;
   width: 100%;
   flex: 1; 
-  background: linear-gradient(to bottom,rgb(10, 10, 191),black);
+  background: linear-gradient(to bottom,rgb(72, 72, 243),rgb(19, 19, 19));
   color: white;
   padding-left: 7%;    
   padding-right: 7%;   
