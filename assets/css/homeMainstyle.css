@@ -11,6 +11,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+  
   }
 
   .main-items{
@@ -23,7 +24,6 @@
   .my-description{
     padding-top: 10px;
     padding-bottom: 10px;
-
   }
     
   .personal-picture {
@@ -41,6 +41,87 @@
     border: black solid 5px;
 }
 
+.skills-bar{
+  margin-top: 20px;   /*fare resp*/
+  border: rgb(221, 124, 140) solid 1px;  
+  width: 100%;
+  display: grid;
+  place-items: center;
+
+}
+
+.row{
+  width: 100%;  /*sistemare resp design su tablet*/
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10%;
+  border: yellow solid 1px;
+
+}
+
+.col{margin: 10px;
+  border: green solid 1px;
+}
+
+.row .col .skill{
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.5), -5px -5px 15px rgba(0,0,0,0.5);
+ 
+}
+
+.row .col:nth-child(1) .skill{
+  background: conic-gradient(#4b4bff 90%, transparent 0); /*sistemare colore corretro con convertitore rbg*/
+}
+
+.row .col:nth-child(2) .skill{
+  background: conic-gradient(#4b4bff 70%, transparent 0);
+}
+
+.row .col:nth-child(3) .skill{
+  background: conic-gradient(#4b4bff 30%, transparent 0);
+}
+
+.row .col .skill::before{
+ content: "";
+ position: absolute;
+ width: 85%;
+ height: 85%;
+ background-color: black;
+ border-radius: 50%;
+ -webkit-border-radius: 50%;
+ -moz-border-radius: 50%;
+ -ms-border-radius: 50%;
+ -o-border-radius: 50%;
+ box-shadow: 5px 5px 15px rgba(0,0,0,0.5) inset, -5px -5px 15px rgba(0,0,0,0.5) inset;
+}
+
+.row .col .skill .content{
+  color:#4b4bff;
+  position: absolute;
+  text-align: center;
+  user-select: none;
+}
+
+.row .col .skill .content span{
+  display: block;
+  padding: 5px 0;
+  letter-spacing: 2px;
+}
+
+
+
+
+
 /*main end*/
 
 
@@ -54,6 +135,15 @@
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .personal-picture {
     width: 80%;
+  }
+
+  .skills-bar{
+    width: 100%;
+  }
+  
+  .row .col .skill{
+    width: 150px;
+    height: 150px;
   }
 
 }
@@ -81,6 +171,21 @@
   .my-description{
     padding-right: 20px;
     padding-left: 30px;
+  }
+
+  .skills-bar{
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .row{
+    width: 860px;
+  }
+
+  .row .col .skill{
+    width: 150px;
+    height: 150px;
   }
 
     
