@@ -63,15 +63,133 @@ main{
   height: auto;
 }
 
-.skills-scheme{
-  border: violet 2px solid;
-  
-}
 
 .main-items-mySkills a {
   color: inherit;
 }
 
+
+.skills-scheme{
+  background-color: rgb(10, 10, 131, 0.15);
+  border-radius: 5%;
+  
+}
+
+.skills-area{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 80%;
+  /*PADDING*/
+}
+.skill{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.skill-name{
+  margin-bottom: 5px;
+}
+
+.skill-bar{
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  height: 20px;
+  z-index: 1;
+  border-radius: 100px;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.305);
+}
+
+.skill-fill{
+  background: rgb(0, 0, 0, 0.6);
+  height: 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.305);
+}
+
+.skill-percent{
+  font-size: 15px;
+  color: white;
+}
+
+.self-motivation{
+  animation: self-motivation 2s;
+  width: 57%;
+}
+
+.organization{
+  animation: organization 2s;
+  width: 85%;
+}
+
+.self-discipline{
+  animation: self-discipline 2s;
+  width: 79%;
+}
+
+.pressure-management{
+  animation: pressure-management 2s;
+  width: 60%;
+}
+
+.proactivity{
+  animation: proactivity 2s;
+  width: 71%;
+}
+
+@keyframes self-motivation{
+  from{
+    width: 0;
+  }
+  to {
+    width: 57%;
+  }
+}
+
+@keyframes organization{
+  from{
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+
+@keyframes self-discipline{
+  from{
+    width: 0;
+  }
+  to {
+    width: 79%;
+  }
+}
+
+
+@keyframes pressure-management{
+  from{
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+
+@keyframes proactivity{
+  from{
+    width: 0;
+  }
+  to {
+    width: 71%;
+  }
+}
 
 .list{
   width: 100%;
@@ -127,5 +245,10 @@ main{
     padding-bottom: 30px;
   }
 
+  .skills-scheme{
+    background-color: rgb(10, 10, 131, 0.0);
+    border-radius: 5%;
+    
+  }
   
 }
