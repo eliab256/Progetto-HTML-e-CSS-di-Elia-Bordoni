@@ -43,10 +43,12 @@
 
 .skills-bar{
   margin-top: 20px;   /*fare resp*/
-  border: rgb(221, 124, 140) solid 1px;  
   width: 100%;
   display: grid;
   place-items: center;
+  background-color: rgba(255, 255, 255, 0.06);
+ 
+  border-radius: 100px;
 
 }
 
@@ -56,12 +58,12 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 10%;
-  border: yellow solid 1px;
+  
 
 }
 
 .col{margin: 10px;
-  border: green solid 1px;
+  
 }
 
 .row .col .skill{
@@ -79,17 +81,37 @@
  
 }
 
-.row .col:nth-child(1) .skill{
-  background: conic-gradient(#4b4bff 90%, transparent 0); /*sistemare colore corretro con convertitore rbg*/
+/*HTML*/
+.row .col:nth-child(1) .skill{   
+  background: conic-gradient(rgb(211, 211, 255) 90%, transparent 0); 
 }
 
-.row .col:nth-child(2) .skill{
-  background: conic-gradient(#4b4bff 70%, transparent 0);
+/*CSS*/
+.row .col:nth-child(2) .skill{   
+  background: conic-gradient(rgb(211, 211, 255)  70%, transparent 0);
 }
 
-.row .col:nth-child(3) .skill{
-  background: conic-gradient(#4b4bff 30%, transparent 0);
+/*Solidity*/
+.row .col:nth-child(3) .skill{   
+  background: conic-gradient(rgb(211, 211, 255)  30%, transparent 0);
 }
+
+/*Javascript*/
+.row .col:nth-child(4) .skill{   
+  background: conic-gradient(rgb(211, 211, 255)  40%, transparent 0);
+}  
+
+/*React*/
+.row .col:nth-child(5) .skill{  
+  background: conic-gradient(rgb(211, 211, 255)  20%, transparent 0);
+}
+
+/*Typescript*/
+.row .col:nth-child(6) .skill{   
+  background: conic-gradient(rgb(211, 211, 255)  10%, transparent 0);
+} 
+
+
 
 .row .col .skill::before{
  content: "";
@@ -106,7 +128,7 @@
 }
 
 .row .col .skill .content{
-  color:#4b4bff;
+  color:rgb(211, 211, 255);
   position: absolute;
   text-align: center;
   user-select: none;
