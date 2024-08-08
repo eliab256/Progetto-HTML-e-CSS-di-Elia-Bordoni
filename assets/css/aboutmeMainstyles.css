@@ -80,7 +80,7 @@ main{
   flex-direction: column;
   margin-top: 20px;
   width: 80%;
-  /*PADDING*/
+ 
 }
 .skill{
   position: relative;
@@ -102,7 +102,7 @@ main{
 }
 
 .skill-fill{
-  background: rgb(0, 0, 0, 0.6);
+  background: linear-gradient(to right,rgb(12, 12, 118),rgb(19, 19, 19));
   height: 20px;
   border-radius: 100px;
   display: flex;
