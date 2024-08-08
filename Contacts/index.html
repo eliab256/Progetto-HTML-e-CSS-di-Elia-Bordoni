@@ -4,8 +4,9 @@
         <meta charset='UTF-8'/>  
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
         <title>Contacts</title> 
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <link rel="icon" type="image/x-icon" href="../assets/img/Personal Logos/Logo Favicon.png"> 
-        <link rel="stylesheet" href="../assets/css/commonstyles.css"> <!--stylesheet header e footer-->
+        <link rel="stylesheet" href="../assets/css/commonstyles.css">         <!--common stylsheet-->
         <link rel="stylesheet" href="../assets/css/contactsMainstyle.css">    <!--stylesheet main-->
     </head>
 
@@ -53,7 +54,7 @@
                 <p><em>Are you interested in starting a collaboration with me?</em></p>
                 <p>Fill out the form below</p>
             </div>
-            <form action='' method='get' class='contact-form'>         <!--inserire dove mandare le richieste (action)-->
+            <form class='contact-form'>       
                 <div class="form-row">
                     <label for='full-name'>Name</label>
                     <input id='full-name' name='full-name' type='text'/>
@@ -75,7 +76,7 @@
 
                 </div>
                 <div class='form-row'>
-                    <button>Submit</button>
+                    <button onclick="sendEmail()">Submit</button>
                   </div>
             </form>
         </main>
@@ -85,6 +86,8 @@
           <div class='footer-item'>&copy 2024 Elia Bordoni</div>
         </div>
         </footer>
-      </div>
+      </div>  <!-- chiusura div page-->
+
+      <script type="text/javascript" src="../assets/Js/Form.js"></script>
     </body>
 </html>
