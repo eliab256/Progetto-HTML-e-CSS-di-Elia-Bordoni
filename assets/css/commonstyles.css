@@ -69,6 +69,10 @@ p{
   text-align: justify;
 }
 
+a{
+  cursor: pointer;
+}
+
 
 
 header{
@@ -132,8 +136,9 @@ header{
   .menu{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex: 2;
-    margin: 5%;
+    margin: 2%;
    
   }
 
@@ -143,7 +148,36 @@ header{
   height: 100%; 
   text-decoration: none; 
   color: inherit;
+  position: relative;
+  
 }
+
+.menu a::before{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0.15em;
+  background: linear-gradient(to left, rgb(38, 38, 205),rgb(19,19,19));
+  background-size: 100%;
+  bottom: 0.3em;
+  transition: 0.5s;
+  
+}
+
+.menu a:hover{
+  color: rgb(10, 10, 131);
+  transition: 0.5s;
+}
+
+.menu a:hover::before{
+  width: 100%;
+}
+
+.menu a:focus::before{
+  width: 100%;
+  transition: 0s;
+}
+
 
 /*header end*/
 
@@ -236,6 +270,10 @@ footer{
     height: 20px;
   }
 
+  .menu{
+    margin: 3%;
+  }
+
   main{
     margin-top: 50px;
   }
@@ -295,6 +333,10 @@ footer{
 
   .social-links{
     height: 30px;
+  }
+
+  .menu{
+    margin: 10%;
   }
 
   main{
