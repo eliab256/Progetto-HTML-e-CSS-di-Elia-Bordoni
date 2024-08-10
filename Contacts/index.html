@@ -4,7 +4,16 @@
         <meta charset='UTF-8'/>  
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
         <title>Contacts</title> 
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="../assets/Js/Form.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+          (function(){
+             emailjs.init({
+              publicKey: "dxkaTtd0GknUmjcgS",
+             });
+          })();
+        </script>
         <link rel="icon" type="image/x-icon" href="../assets/img/Personal Logos/Logo Favicon.png"> 
         <link rel="stylesheet" href="../assets/css/commonstyles.css">         <!--common stylsheet-->
         <link rel="stylesheet" href="../assets/css/contactsMainstyle.css">    <!--stylesheet main-->
@@ -87,7 +96,5 @@
         </div>
         </footer>
       </div>  <!-- chiusura div page-->
-
-      <script type="text/javascript" src="../assets/Js/Form.js"></script>
     </body>
 </html>

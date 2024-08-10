@@ -1,22 +1,25 @@
 function sendEmail() {
-    emailjs.init({
-        publicKey:"dxkaTtd0GknUmjcgS",
-    });
-    var parameters = {
+
+    var params = {
         name: document.getElementById("full-name").value,
         company: document.getElementById("company").value,
         email: document.getElementById("email").value,
         message: document.getElementById("message").value
-    }
-    
-    const templateID = "template_3s1kcyf";
-    const serviceID = "service_6uyeg9x";
+    };
+   
+    const templateID = "template_5vkuo8n";
+    const serviceID = "service_g8ukqjl";
 
-    emailjs.send(templateID, serviceID, parameters).then((res) => {
+    emailjs.send(templateID, serviceID, params).then((res) => {
         document.getElementById("full-name").value = "";
         document.getElementById("company").value = "";
         document.getElementById("email").value = "";
         document.getElementById("message").value = "";
         console.log(res);
-    }).catch((err) => console.log(err))
+        alert("your message sent succesfully");
+    })
+    .catch((err) => console.log(err));
 }
+
+
+
