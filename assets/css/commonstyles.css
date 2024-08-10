@@ -83,6 +83,7 @@ header{
     position: fixed;
     z-index: 100;
     display: flex;
+    justify-content: center;
   }
 
   .header-container{
@@ -202,6 +203,9 @@ main{
   padding-left: 7%;    
   padding-right: 7%;   
   padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+
 }
 
 .title{
@@ -322,19 +326,16 @@ footer{
     margin-bottom: 20px;
     text-align: justify;
   }
-
-  .page {
-  
-  }
   
   header{
     height: 80px;
     border-bottom: black solid 4px;
-    justify-content: center;
+    
   }
 
   .width-controller{
     width: 960px;
+    border: greenyellow solid 1px;
   }
 
   .header-items{
