@@ -73,7 +73,16 @@ a{
   cursor: pointer;
 }
 
+::-webkit-scrollbar{
+  width: 5px;
+  background: black;
+}
 
+::-webkit-scrollbar-thumb{
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+
+}
 
 header{
     width: 100%;
