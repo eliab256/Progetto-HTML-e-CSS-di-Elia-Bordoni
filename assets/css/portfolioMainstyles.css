@@ -66,6 +66,7 @@ main{
  background-color: white;
  color: black;
  cursor:pointer;
+ 
 }
 
 .works-grid-item a{
@@ -77,11 +78,11 @@ main{
   display: flex;
   align-items: center;
   height: auto;
-  width: auto;
+  width: 80%;
+  margin: 0 auto;
   flex: 1;
   padding: 5%;
   position: relative;
-  
 }
 
 .item-title-box{
