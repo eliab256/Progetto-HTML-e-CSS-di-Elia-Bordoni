@@ -5,6 +5,10 @@
     align-items: center;
   }
 
+  .title{
+    margin: 0 auto;
+  }
+
   .main-container{
     display: flex;
     flex-direction: row;
@@ -142,12 +146,6 @@
 
 
 
-
-
-/*main end*/
-
-
-
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
  
@@ -167,6 +165,7 @@
     width: 150px;
     height: 150px;
   }
+  
 
 }
 
