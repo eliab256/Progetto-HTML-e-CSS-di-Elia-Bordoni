@@ -1,9 +1,9 @@
 
-main{
+
+.main-container-portfolio{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 
@@ -30,6 +30,8 @@ main{
   padding-bottom: 5px;
   height: auto;
   border-bottom: 2px white dashed;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .name-school-works h2{

@@ -218,7 +218,8 @@ main{
   padding-bottom: 10px;
   flex: 0;
   width: 80%;
-  border-bottom: dashed white 3px;   
+  border-bottom: dashed white 3px;  
+  margin: 0 auto; 
 }
 
 
@@ -335,7 +336,6 @@ footer{
 
   .width-controller{
     width: 960px;
-    border: greenyellow solid 1px;
   }
 
   .header-items{
