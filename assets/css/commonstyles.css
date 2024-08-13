@@ -213,8 +213,7 @@ main{
   padding-right: 7%;   
   padding-bottom: 30px;
   display: flex;
-  justify-content: center;
-
+ 
 }
 
 .title{
@@ -229,6 +228,7 @@ main{
   width: 80%;
   border-bottom: dashed white 3px;  
   margin: 0 auto; 
+  
 }
 
 

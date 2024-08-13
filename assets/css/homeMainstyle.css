@@ -15,7 +15,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-  
+    
   }
 
   .main-items{
@@ -23,6 +23,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    
   }
 
   .my-description{
@@ -172,12 +173,16 @@
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
 
+  
+  
   .main-items{
     width: 50%;
+   
   }
 
   .title{
     margin-bottom: 5%;
+    
   }
 
   .personal-picture {
