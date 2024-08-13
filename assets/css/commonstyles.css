@@ -213,7 +213,7 @@ main{
   padding-right: 7%;   
   padding-bottom: 30px;
   display: flex;
- 
+ /* justify-content: center; */
 }
 
 .title{
