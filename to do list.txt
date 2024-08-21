@@ -1,4 +1,4 @@
-1) se hai provato a condividere il tuo sito sui social o in qualche chat immagino che il risultato non deve essere stato troppo soddisfacente. 
+OK 1) se hai provato a condividere il tuo sito sui social o in qualche chat immagino che il risultato non deve essere stato troppo soddisfacente. 
 Manca un’anteprima e del testo che in altri siti è invece ben visibile. Per ovviare a questo problema dovresti implementare dei meta tag 
 "Open Graph" che ti consentono di controllare come appaiono i tuoi post su Facebook e altri siti social. Puoi scoprire come funzionano nel 
 sito ufficiale: https://ogp.me/;
@@ -10,7 +10,7 @@ il caricamento della pagina poiché i file vengono cacheati;
 OK 3)i tag "img" devono sempre avere un attributo "alt" valorizzato con una descrizione breve ma parlante poiché sono fondamentali per la SEO
  e l'accessibilità;
 
-4)fai aprire tutti i collegamenti esterni alla tua pagina web in una tab esterna in modo tale che il tuo sito rimanga sempre visibile puoi usare 
+OK 4)fai aprire tutti i collegamenti esterni alla tua pagina web in una tab esterna in modo tale che il tuo sito rimanga sempre visibile puoi usare 
 nel tag “a”, l'attributo target="_blank". Ricorda che in questo caso di usare anche il rel="noopener" per questioni di sicurezza: 
 https://techstacker.com/html-noopener-attribute/;
 
