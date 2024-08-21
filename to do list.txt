@@ -3,7 +3,7 @@ Manca un’anteprima e del testo che in altri siti è invece ben visibile. Per o
 "Open Graph" che ti consentono di controllare come appaiono i tuoi post su Facebook e altri siti social. Puoi scoprire come funzionano nel 
 sito ufficiale: https://ogp.me/;
 
-?? 2)codice JS o CSS non va mai inserito direttamente nella pagina HTML ma sempre in appositi file (.css, .js) che vanno poi linkati all'interno 
+OK 2)codice JS o CSS non va mai inserito direttamente nella pagina HTML ma sempre in appositi file (.css, .js) che vanno poi linkati all'interno 
 della pagina. Questo permette di centralizzare il codice favorendone la manutenzione e la riusabilità e aiuta anche il browser ad ottimizzare 
 il caricamento della pagina poiché i file vengono cacheati;
 
@@ -19,7 +19,7 @@ in modalità mobile, gli input dovrebbero essere lunghi tutto lo schermo in modo
 
 OK 6)in console ci sono un po' di errori, in particolare sembra manchino due risorse relative ai font;
 
-7)il tag h1 andrebbe rivisto. Solitamente contiene una informazione utile che indica di chi è il sito o di cosa tratta; questo perché gli H1 
+?? 7)il tag h1 andrebbe rivisto. Solitamente contiene una informazione utile che indica di chi è il sito o di cosa tratta; questo perché gli H1 
 vengono utilizzati nei risultati dei motori di ricerca e sono molto importati per la SEO;
 
 Ok 8)la form “contattami” dovrebbe avere degli attributi "required" in corrispondenza dei campi di input da compilare; questo farà sì che prima 
