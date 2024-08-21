@@ -3,7 +3,7 @@ Manca un’anteprima e del testo che in altri siti è invece ben visibile. Per o
 "Open Graph" che ti consentono di controllare come appaiono i tuoi post su Facebook e altri siti social. Puoi scoprire come funzionano nel 
 sito ufficiale: https://ogp.me/;
 
-2)codice JS o CSS non va mai inserito direttamente nella pagina HTML ma sempre in appositi file (.css, .js) che vanno poi linkati all'interno 
+?? 2)codice JS o CSS non va mai inserito direttamente nella pagina HTML ma sempre in appositi file (.css, .js) che vanno poi linkati all'interno 
 della pagina. Questo permette di centralizzare il codice favorendone la manutenzione e la riusabilità e aiuta anche il browser ad ottimizzare 
 il caricamento della pagina poiché i file vengono cacheati;
 
@@ -14,10 +14,10 @@ OK 4)fai aprire tutti i collegamenti esterni alla tua pagina web in una tab este
 nel tag “a”, l'attributo target="_blank". Ricorda che in questo caso di usare anche il rel="noopener" per questioni di sicurezza: 
 https://techstacker.com/html-noopener-attribute/;
 
-5)ho notato che navigando il sito in modalità mobile (iPhone 12) ci sono problemi con la "responsività" della form "contattami". Solitamente, 
+OK 5)ho notato che navigando il sito in modalità mobile (iPhone 12) ci sono problemi con la "responsività" della form "contattami". Solitamente, 
 in modalità mobile, gli input dovrebbero essere lunghi tutto lo schermo in modo da essere più visibili e facilmente compilabili;
 
-6)in console ci sono un po' di errori, in particolare sembra manchino due risorse relative ai font;
+ok 6)in console ci sono un po' di errori, in particolare sembra manchino due risorse relative ai font;
 
 7)il tag h1 andrebbe rivisto. Solitamente contiene una informazione utile che indica di chi è il sito o di cosa tratta; questo perché gli H1 
 vengono utilizzati nei risultati dei motori di ricerca e sono molto importati per la SEO;

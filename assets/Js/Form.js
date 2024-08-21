@@ -1,3 +1,11 @@
+
+
+(function(){
+    emailjs.init({
+     publicKey: "dxkaTtd0GknUmjcgS",
+    });
+ })();
+
 function sendEmail() {
 
     var params = {
@@ -20,6 +28,7 @@ function sendEmail() {
     })
     .catch((err) => console.log(err));
 }
+
 
 
 
