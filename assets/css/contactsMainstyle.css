@@ -92,6 +92,11 @@ main{
     margin-bottom: 5px;
   }
 
+  input:invalid, textarea:invalid {
+    border: 1px solid #000000; 
+   
+  }
+
   /* Mobile Styles */
   @media only screen and (max-width: 400px) {
 
