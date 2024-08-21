@@ -1,33 +1,26 @@
-home:
-- aggiungere font
-- cambiare l' immagine di sfondo
-- arrotondare e fare l' ombra alla foto
-- fare lo sfondo più scuro per il testo
-- check altezza variabile flexbox titolo 
-- sistemare dimensioni font e padding margini per responsive design
-- centrare verticalmente il menù nell' header OK
-- non far sbordare il logo s2i nell' header OK
+1) se hai provato a condividere il tuo sito sui social o in qualche chat immagino che il risultato non deve essere stato troppo soddisfacente. 
+Manca un’anteprima e del testo che in altri siti è invece ben visibile. Per ovviare a questo problema dovresti implementare dei meta tag 
+"Open Graph" che ti consentono di controllare come appaiono i tuoi post su Facebook e altri siti social. Puoi scoprire come funzionano nel 
+sito ufficiale: https://ogp.me/;
 
+2)codice JS o CSS non va mai inserito direttamente nella pagina HTML ma sempre in appositi file (.css, .js) che vanno poi linkati all'interno 
+della pagina. Questo permette di centralizzare il codice favorendone la manutenzione e la riusabilità e aiuta anche il browser ad ottimizzare 
+il caricamento della pagina poiché i file vengono cacheati;
 
-header e footer:
-- sistemare font
-- aggiungere effetto click
--sistemare responsive font size su footer
+OK 3)i tag "img" devono sempre avere un attributo "alt" valorizzato con una descrizione breve ma parlante poiché sono fondamentali per la SEO
+ e l'accessibilità;
 
-portfolio:
-- sistemare flexbox grid OK
-- sistemare font  h1 e h2 e h3
-- sistemare lo scorrimento della pagina per far si che prenda tutta la largezza dello schermo su desktop
-- aggiungere foto e testi per ogni progetto
+4)fai aprire tutti i collegamenti esterni alla tua pagina web in una tab esterna in modo tale che il tuo sito rimanga sempre visibile puoi usare 
+nel tag “a”, l'attributo target="_blank". Ricorda che in questo caso di usare anche il rel="noopener" per questioni di sicurezza: 
+https://techstacker.com/html-noopener-attribute/;
 
-about me:
+5)ho notato che navigando il sito in modalità mobile (iPhone 12) ci sono problemi con la "responsività" della form "contattami". Solitamente, 
+in modalità mobile, gli input dovrebbero essere lunghi tutto lo schermo in modo da essere più visibili e facilmente compilabili;
 
-- creare lo stile degli elenchi puntati ok
-- completare la descrizione OK
-- compilare la sezione personal growth ok
-- aggiungere separatore verticale in destop layout OK
-- aggiungere font OK
-- sistemare lo scorrimento della pagina per far si che prenda tutta la largezza dello schermo su desktop
+6)in console ci sono un po' di errori, in particolare sembra manchino due risorse relative ai font;
 
+7)il tag h1 andrebbe rivisto. Solitamente contiene una informazione utile che indica di chi è il sito o di cosa tratta; questo perché gli H1 
+vengono utilizzati nei risultati dei motori di ricerca e sono molto importati per la SEO;
 
--creare un css con tutte le cose in comune tra i vari fogli (padding, font size, font family ecc)
+8)la form “contattami” dovrebbe avere degli attributi "required" in corrispondenza dei campi di input da compilare; questo farà sì che prima 
+di inviare la form il browser verificherà che tutto sia compilato e conforme;
