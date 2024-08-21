@@ -1,10 +1,5 @@
 
 
-(function(){
-    emailjs.init({
-     publicKey: "dxkaTtd0GknUmjcgS",
-    });
- })();
 
 function sendEmail() {
 
@@ -18,7 +13,8 @@ function sendEmail() {
     const templateID = "template_5vkuo8n";
     const serviceID = "service_g8ukqjl";
 
-    emailjs.send(templateID, serviceID, params).then((res) => {
+    emailjs.send(serviceID, templateID,  params)
+    .then((res) => {
         document.getElementById("full-name").value = "";
         document.getElementById("company").value = "";
         document.getElementById("email").value = "";
@@ -28,6 +24,10 @@ function sendEmail() {
     })
     .catch((err) => console.log(err));
 }
+
+(function(){
+    emailjs.init( "dxkaTtd0GknUmjcgS");
+ })();
 
 
 

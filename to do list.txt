@@ -17,10 +17,10 @@ https://techstacker.com/html-noopener-attribute/;
 OK 5)ho notato che navigando il sito in modalità mobile (iPhone 12) ci sono problemi con la "responsività" della form "contattami". Solitamente, 
 in modalità mobile, gli input dovrebbero essere lunghi tutto lo schermo in modo da essere più visibili e facilmente compilabili;
 
-ok 6)in console ci sono un po' di errori, in particolare sembra manchino due risorse relative ai font;
+OK 6)in console ci sono un po' di errori, in particolare sembra manchino due risorse relative ai font;
 
 7)il tag h1 andrebbe rivisto. Solitamente contiene una informazione utile che indica di chi è il sito o di cosa tratta; questo perché gli H1 
 vengono utilizzati nei risultati dei motori di ricerca e sono molto importati per la SEO;
 
-8)la form “contattami” dovrebbe avere degli attributi "required" in corrispondenza dei campi di input da compilare; questo farà sì che prima 
+Ok 8)la form “contattami” dovrebbe avere degli attributi "required" in corrispondenza dei campi di input da compilare; questo farà sì che prima 
 di inviare la form il browser verificherà che tutto sia compilato e conforme;
