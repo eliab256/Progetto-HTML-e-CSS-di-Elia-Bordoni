@@ -3,6 +3,14 @@
 
 function sendEmail() {
 
+    event.preventDefault();
+
+    const form = document.querySelector('.contact-form');
+    if (!form.checkValidity()) {
+        alert("Please fill out all required fields correctly.");
+        return;
+    }
+
     var params = {
         fullName: document.getElementById("fullName").value,
         company: document.getElementById("company").value,
