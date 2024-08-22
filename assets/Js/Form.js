@@ -3,8 +3,16 @@
 
 function sendEmail() {
 
+    event.preventDefault();
+
+    const form = document.querySelector('.contact-form');
+    if (!form.checkValidity()) {
+        alert("Please fill out all required fields correctly.");
+        return;
+    }
+
     var params = {
-        name: document.getElementById("full-name").value,
+        fullName: document.getElementById("fullName").value,
         company: document.getElementById("company").value,
         email: document.getElementById("email").value,
         message: document.getElementById("message").value
@@ -15,7 +23,7 @@ function sendEmail() {
 
     emailjs.send(serviceID, templateID,  params)
     .then((res) => {
-        document.getElementById("full-name").value = "";
+        document.getElementById("fullName").value = "";
         document.getElementById("company").value = "";
         document.getElementById("email").value = "";
         document.getElementById("message").value = "";
