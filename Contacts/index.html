@@ -1,103 +1,98 @@
 <!DOCTYPE html>
-<html lang="en-US"> 
-    <head>
-        <meta charset='UTF-8'/>  
-        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-        <meta property="og:title" content="Elia Bordoni Blockchain Dev" />
-        <meta property="og:description" content="Official webiste of Elia Bordoni" />
-        <meta property="og:image" content="https://raw.githubusercontent.com/eliab256/Progetto-HTML-e-CSS-di-Elia-Bordoni/main/assets/img/Image%20for%20open%20Graph.jpg" />
-        <meta property="og:url" content="https://eliab256.github.io/Progetto-HTML-e-CSS-di-Elia-Bordoni/Contacts/" />
-        <title>Contacts</title> 
-        <link rel="icon" type="image/x-icon" href="../assets/img/Personal Logos/Logo Favicon.png"> 
-        <link rel="stylesheet" href="../assets/css/commonstyles.css">         <!--common stylsheet-->
-        <link rel="stylesheet" href="../assets/css/contactsMainstyle.css">    <!--stylesheet main-->
-    </head>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta property="og:title" content="Elia Bordoni Blockchain Dev" />
+    <meta property="og:description" content="Official webiste of Elia Bordoni" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/eliab256/Progetto-HTML-e-CSS-di-Elia-Bordoni/main/assets/img/Image%20for%20open%20Graph.jpg" />
+    <meta property="og:url" content="https://eliab256.github.io/Progetto-HTML-e-CSS-di-Elia-Bordoni/Contacts/" />
+    <title>Contacts</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/Personal Logos/Logo Favicon.png" />
+    <link rel="stylesheet" href="../assets/css/commonstyles.css" />
+    <!--common stylsheet-->
+    <link rel="stylesheet" href="../assets/css/contactsMainstyle.css" />
+    <!--stylesheet main-->
+  </head>
 
-
-    <body>
-      <div class="page">
-        <header>
-          <div class="header-container width-controller">
-            <div class='header-items logo'>
-              <div class ="logo-items">
+  <body>
+    <div class="page">
+      <header>
+        <div class="header-container width-controller">
+          <div class="header-items logo">
+            <div class="logo-items">
               <a href="../index.html">
-                <img src='../assets/img/Personal Logos/Logo personale senza sfondo scritta a capo sulla destra ritagliato.png' alt="My Logo">
-            </a>
+                <img src="../assets/img/Personal Logos/Logo personale senza sfondo scritta a capo sulla destra ritagliato.png" alt="My Logo" />
+              </a>
             </div>
           </div>
           <div class="header-items menu">
             <a href="../About_Me">About Me</a>
             <a href="../Portfolio">Portfolio</a>
             <a href="../Contacts">Contacts</a>
+          </div>
+          <div class="header-items social-links">
+            <div class="social-link-items">
+              <a href="https://www.linkedin.com/in/elia-bordoni" rel="noopener" target="_blank">
+                <img src="../assets/img/Linkedin Logos/LI-In-Bug tagliato.png" alt="linkedin link" />
+              </a>
             </div>
-            <div class="header-items social-links">
-              <div class="social-link-items">
-                <a href="https://www.linkedin.com/in/elia-bordoni" rel="noopener" target="_blank">
-                  <img src="../assets/img/Linkedin Logos/LI-In-Bug tagliato.png" alt="linkedin link">                                                       
-                </a>
-              </div>  
-              <div class="social-link-items">
-                <a href="https://github.com/eliab256" rel="noopener" target="_blank">
-                  <img src="../assets/img/GitHub Logos/github-mark.png" alt="github link">
-                </a>
-              </div>
-              <div class="social-link-items">
-                <a href="https://talent.start2impact.it/profile/elia-bordoni-856a171d-db43-4743-a606-e3bb8d631f35" rel="noopener" target="_blank">
-                  <img src="../assets/img/S2I Logo.png" alt="start2impact link">                                    
-                </a>
-              </div>
+            <div class="social-link-items">
+              <a href="https://github.com/eliab256" rel="noopener" target="_blank">
+                <img src="../assets/img/GitHub Logos/github-mark.png" alt="github link" />
+              </a>
+            </div>
+            <div class="social-link-items">
+              <a href="https://talent.start2impact.it/profile/elia-bordoni-856a171d-db43-4743-a606-e3bb8d631f35" rel="noopener" target="_blank">
+                <img src="../assets/img/S2I Logo.png" alt="start2impact link" />
+              </a>
             </div>
           </div>
-        </header>
-
-        <main>
-          <div class="width-controller">
-            <div class="form-container">
-              <div class="title">
-                <h1>Contacts</h1>
-              </div>
-                <p><em>Do you need help with your project?</em></p>
-                <p><em>Are you interested in starting a collaboration with me?</em></p>
-                <p>Fill out the form below</p>
-            </div>
-            <form class='contact-form'>       
-                <div class="form-row">
-                    <label for='fullName'>Name</label>
-                    <input id='fullName' name='fullName' type='text' required/>
-                </div>
-                <div class="form-row">
-                    <label for='company'>Company</label>
-                    <input id='company' name='company' type='text' required/>
-                </div>
-                <div class='form-row'>
-                    <label for='email'>Email address</label>
-                    <input id='email'
-                           name='email'
-                           type='email'
-                           placeholder='joe@example.com'
-                           required/>
-                  </div>
-                  <div class="form-row">
-                    <label for='message'>Message</label>
-                    <textarea id='message' name='message' type='text' placeholder="Write your message here" required></textarea>
-
-                </div>
-                <div class='form-row'>
-                    <button type="submit" onclick="sendEmail(event)">Submit</button>
-                  </div>
-            </form>
-          </div>
-        </main>
-
-        <footer>
-        <div class='footer-container'>
-          <div class='footer-item'>&copy 2024 Elia Bordoni</div>
         </div>
-        </footer>
-      </div>  <!-- chiusura div page-->
+      </header>
 
-      
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-      <script src="../assets/Js/Form.js"></script>
-    </body>
+      <main>
+        <div class="width-controller">
+          <div class="form-container">
+            <div class="title">
+              <h1>Contacts</h1>
+            </div>
+            <p><em>Do you need help with your project?</em></p>
+            <p><em>Are you interested in starting a collaboration with me?</em></p>
+            <p>Fill out the form below</p>
+          </div>
+          <form class="contact-form">
+            <div class="form-row">
+              <label for="fullName">Name</label>
+              <input id="fullName" name="fullName" type="text" required />
+            </div>
+            <div class="form-row">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" placeholder="joe@example.com" required />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" type="text" placeholder="Write your message here" required></textarea>
+            </div>
+            <div class="form-row">
+              <button type="submit" onclick="sendEmail(event)">Submit</button>
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-item">&copy 2024 Elia Bordoni</div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="../assets/Js/Form.js"></script>
+  </body>
 </html>
