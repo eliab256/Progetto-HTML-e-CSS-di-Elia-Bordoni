@@ -1,77 +1,71 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.title {
+  margin: 0 auto;
+}
 
-  .title{
-    margin: 0 auto;
-  }
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
-  .main-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    
-  }
+.main-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
-  .main-items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    
-  }
+.my-description {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-  .my-description{
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-    
-  .personal-picture {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+.personal-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .personal-picture img {
-    width: 100%;
-    height: 80%;
-    object-fit: cover; 
-    border-radius: 300px;
-    border: black solid 5px;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 300px;
+  border: black solid 5px;
 }
 
-.skills-bar{
-  margin-top: 20px;   /*fare resp*/
+.skills-bar {
+  margin-top: 20px;
   width: 100%;
   display: grid;
   place-items: center;
   background-color: rgba(255, 255, 255, 0.06);
- 
-  border-radius: 100px;
 
+  border-radius: 100px;
 }
 
-.row{
-  width: 100%;  /*sistemare resp design su tablet*/
+.row {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 10%;
-  
-
 }
 
-.col{margin: 10px;
-  
+.col {
+  margin: 10px;
 }
 
-.row .col .skill{
+.row .col .skill {
   width: 120px;
   height: 120px;
   position: relative;
@@ -82,73 +76,69 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.5), -5px -5px 15px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(0, 0, 0, 0.5);
 }
 
 /*HTML*/
-.row .col:nth-child(1) .skill{   
-  background: conic-gradient(rgb(211, 211, 255) 90%, transparent 0); 
+.row .col:nth-child(1) .skill {
+  background: conic-gradient(rgb(211, 211, 255) 90%, transparent 0);
 }
 
 /*CSS*/
-.row .col:nth-child(2) .skill{   
-  background: conic-gradient(rgb(211, 211, 255)  80%, transparent 0);
+.row .col:nth-child(2) .skill {
+  background: conic-gradient(rgb(211, 211, 255) 80%, transparent 0);
 }
 
 /*Solidity*/
-.row .col:nth-child(3) .skill{   
-  background: conic-gradient(rgb(211, 211, 255)  30%, transparent 0);
+.row .col:nth-child(3) .skill {
+  background: conic-gradient(rgb(211, 211, 255) 30%, transparent 0);
 }
 
 /*Javascript*/
-.row .col:nth-child(4) .skill{   
-  background: conic-gradient(rgb(211, 211, 255)  60%, transparent 0);
-}  
+.row .col:nth-child(4) .skill {
+  background: conic-gradient(rgb(211, 211, 255) 80%, transparent 0);
+}
 
 /*React*/
-.row .col:nth-child(5) .skill{  
-  background: conic-gradient(rgb(211, 211, 255)  60%, transparent 0);
+.row .col:nth-child(5) .skill {
+  background: conic-gradient(rgb(211, 211, 255) 80%, transparent 0);
 }
 
 /*Typescript*/
-.row .col:nth-child(6) .skill{   
-  background: conic-gradient(rgb(211, 211, 255)  10%, transparent 0);
-} 
-
-
-
-.row .col .skill::before{
- content: "";
- position: absolute;
- width: 85%;
- height: 85%;
- background-color: black;
- border-radius: 50%;
- -webkit-border-radius: 50%;
- -moz-border-radius: 50%;
- -ms-border-radius: 50%;
- -o-border-radius: 50%;
- box-shadow: 5px 5px 15px rgba(0,0,0,0.5) inset, -5px -5px 15px rgba(0,0,0,0.5) inset;
+.row .col:nth-child(6) .skill {
+  background: conic-gradient(rgb(211, 211, 255) 60%, transparent 0);
 }
 
-.row .col .skill .content{
-  color:rgb(211, 211, 255);
+.row .col .skill::before {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  background-color: black;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5) inset,
+    -5px -5px 15px rgba(0, 0, 0, 0.5) inset;
+}
+
+.row .col .skill .content {
+  color: rgb(211, 211, 255);
   position: absolute;
   text-align: center;
   user-select: none;
 }
 
-.row .col .skill .content span{
+.row .col .skill .content span {
   display: block;
   padding: 5px 0;
   letter-spacing: 2px;
 }
 
-
-
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
- 
 }
 
 /* Tablet Styles */
@@ -157,29 +147,24 @@
     width: 80%;
   }
 
-  .skills-bar{
+  .skills-bar {
     width: 100%;
   }
-  
-  .row .col .skill{
+
+  .row .col .skill {
     width: 150px;
     height: 150px;
   }
-  
-
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  
-  .main-items{
+  .main-items {
     width: 50%;
-   
   }
 
-  .title{
+  .title {
     margin-bottom: 5%;
-    
   }
 
   .personal-picture {
@@ -191,25 +176,23 @@
     width: 80%;
   }
 
-  .my-description{
+  .my-description {
     padding-right: 20px;
     padding-left: 30px;
   }
 
-  .skills-bar{
+  .skills-bar {
     width: 100%;
     margin-left: 20px;
     margin-right: 20px;
   }
 
-  .row{
+  .row {
     width: 860px;
   }
 
-  .row .col .skill{
+  .row .col .skill {
     width: 150px;
     height: 150px;
   }
-
-    
 }
