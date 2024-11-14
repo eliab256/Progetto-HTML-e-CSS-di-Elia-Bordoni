@@ -91,7 +91,7 @@ main {
 
 /*Solidity*/
 .row .col:nth-child(3) .skill {
-  background: conic-gradient(rgb(211, 211, 255) 30%, transparent 0);
+  background: conic-gradient(rgb(211, 211, 255) 70%, transparent 0);
 }
 
 /*Javascript*/
@@ -120,8 +120,7 @@ main {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5) inset,
-    -5px -5px 15px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5) inset, -5px -5px 15px rgba(0, 0, 0, 0.5) inset;
 }
 
 .row .col .skill .content {
