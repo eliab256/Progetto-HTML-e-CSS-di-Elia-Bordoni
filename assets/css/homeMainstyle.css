@@ -81,7 +81,7 @@ main {
 
 /*HTML*/
 .row .col:nth-child(1) .skill {
-  background: conic-gradient(rgb(211, 211, 255) 90%, transparent 0);
+  background: conic-gradient(rgb(211, 211, 255) 80%, transparent 0);
 }
 
 /*CSS*/
@@ -91,22 +91,27 @@ main {
 
 /*Solidity*/
 .row .col:nth-child(3) .skill {
-  background: conic-gradient(rgb(211, 211, 255) 70%, transparent 0);
+  background: conic-gradient(rgb(211, 211, 255) 80%, transparent 0);
 }
 
 /*Javascript*/
 .row .col:nth-child(4) .skill {
-  background: conic-gradient(rgb(211, 211, 255) 80%, transparent 0);
+  background: conic-gradient(rgb(211, 211, 255) 70%, transparent 0);
 }
 
 /*React*/
 .row .col:nth-child(5) .skill {
-  background: conic-gradient(rgb(211, 211, 255) 80%, transparent 0);
+  background: conic-gradient(rgb(211, 211, 255) 60%, transparent 0);
 }
 
 /*Typescript*/
 .row .col:nth-child(6) .skill {
-  background: conic-gradient(rgb(211, 211, 255) 60%, transparent 0);
+  background: conic-gradient(rgb(211, 211, 255) 70%, transparent 0);
+}
+
+/*Hardhat*/
+.row .col:nth-child(7) .skill {
+  background: conic-gradient(rgb(211, 211, 255) 80%, transparent 0);
 }
 
 .row .col .skill::before {
